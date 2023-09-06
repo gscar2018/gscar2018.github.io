@@ -1,5 +1,13 @@
+header {
+    text-align: center;
+}
+
 body {
     background-color: lightblue;
+}
+
+footer {
+    text-align: center;
 }
 
 h1 {
@@ -7,6 +15,7 @@ h1 {
     text-align: center;
 
 }
+
 h2 {
     color: white;
 }
@@ -16,20 +25,35 @@ p {
     font-size: 20px;
     color: white;
 }
+
 h2 {
 text-align: center;
 }
-ul{
-    color: tomato;
+
+.pictext {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
 }
 
-.image{
+.bullets {
+    margin-left: 150px;
+    margin-right: 150px; 
+    word-wrap: break-word;
+}
+
+ul {
+    color: white;
+    padding-left: 30px;
+}
+
+.image {
     display: block;
     margin-left:auto;
     margin-right:auto;
 }
 
-figcaption{
+figcaption {
     text-align: center;
     color: white;
 }
