@@ -3,31 +3,103 @@ header {
 }
 
 body {
-    background-color: lightblue;
+    background-color: #285794;
 }
 
 footer {
     text-align: center;
+    padding: 25px;
+}
+
+form{
+    width: 60px;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset{
+    border: none;
+    border-bottom: 4px solid #dfd9d4 ;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+input {
+    width: 100%;
+    background-color: #FCF1E6;
+    border-color: #FCF1E6;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+    color:#FCF1E6;
+}
+
+table, th, td{
+    border: 1px solid black;
+    align-items: center;
+    color: #FCF1E6
+}
+.table-1, .table-2{
+    margin-left: auto;
+    margin-right: auto;
+}
+table tr:nth-child(even){
+    background-color: #777;
+}
+
+th {
+    background-color: #777;
+}
+td{
+    padding: 5px;
+}
+
+.table-header{
+    text-align: center;
+    color:#FCF1E6;
+}
+
+a{
+    color:#98B2D4
 }
 
 h1 {
-    color: white;
+    color: #FCF1E6;
     text-align: center;
 
 }
 
 h2 {
-    color: white;
+    color: #FCF1E6;
+    text-align: center;
 }
 
 p {
     font-family: verdana;
     font-size: 20px;
-    color: white;
+    color: #FCF1E6;
 }
-
-h2 {
-text-align: center;
+ul {
+    color: #FCF1E6;
+    padding-left: 30px;
+}
+figcaption {
+    text-align: center;
+    color: #FCF1E6;
+}
+.employees{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+    list-style-type: square;
+    align-items: center;
+    color: #FCF1E6;
 }
 
 .pictext {
@@ -42,18 +114,15 @@ text-align: center;
     word-wrap: break-word;
 }
 
-ul {
-    color: white;
-    padding-left: 30px;
-}
-
 .image {
     display: block;
     margin-left:auto;
     margin-right:auto;
 }
-
-figcaption {
-    text-align: center;
-    color: white;
+.radio{
+    width: unset;
 }
+.reset{
+    width: unset;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Scardo Groovy Spiders || ITIS 3135 ||HTML Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <a href="./">Home</a>
+        ||
+        <a href="introduction.html">Introduction</a>
+        ||
+        <a href="contract.html">Contract</a>
+        ||
+        <a href="tables.html">Tables</a>
+        ||
+        <a href="forms.html">Form</a>
+    </header>
+    <main>
+        <h1>Form</h1>
+        <form action="#">
+            <fieldset>
+                <label for ="first-name">Enter your First name: <input id="first-name" name="first-name" type="text" required/></label>
+                <label for ="last-name">Enter your last name: <input id="last-name" name="last-name" type="text" required/></label>
+                <label for ="birthday">Enter your Date Of Birth: <input id="birthday" name="birthday" type="date"></label>
+            </fieldset>
+            <fieldset>
+                <label for ="email">Enter your Email: <input id="email" name="email" type="text" required/></label>
+                <label for ="password">Created a New Password: <input id="password" name="password" type="password"  pattern="[a-z0-5]{8,}"required/></label>
+                <label for ="phone-number">Enter a valid Phone Number: <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"/></label>
+
+            </fieldset>
+            <fieldset >
+                <label for="email-contact"><input id="email-contact" type="radio" name="contact" class="radio" />Phone contact preference</label>
+                <label for="phone-contact"><input id="phone-contact" type="radio" name="contact" class="radio" />Email contact preference</label>
+            </fieldset>
+            <fieldset>
+                <label for="inquiry">Favorite pet
+                <select id="inquiry" name="inquiry">
+                    <option value="">select one</option>
+                    <option value="1">Dog</option>
+                    <option value="2">Cat</option>
+                    <option value="3">Bird</option>
+                    <option value="4">Reptile</option>
+                    <option value="5">Fish</option>
+                </select>
+            </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" class="reset">
+        </form>
+
+    </main>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/gscardo/">CLT Webspace</a>
+            ||
+            <a href="https://github.com/gscar2018">Github</a>
+            ||
+            <a href="https://gscar2018.github.io">Github.io</a>
+            ||
+            <a href="https://gscar2018.github.io/itis3135/">ITIS3135.io</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/gscardo2023">Codeacademy</a>
+            ||
+            <a href="https://www.freecodecamp.org/gscardo2023">FreeCodeCamp</a>
+            ||
+            <a href="https://www.linkedin.com/in/gabriel-scardo-a64b2824a/">LinkedIn</a>
+        </nav>
+        <p>Page built by <a href="scardoinc.com/">Scardo Inc </a>&copy; 2023 </p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML." />
+        </a>        
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+    </footer>
+</body>
+</html>
+
