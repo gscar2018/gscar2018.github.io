@@ -68,28 +68,44 @@ a{
     color:#98B2D4
 }
 
-h1 {
-    color: #FCF1E6;
-    text-align: center;
-
-}
-
-h2 {
+h1, h2, h3  {
+    font-family: garamond;
     color: #FCF1E6;
     text-align: center;
 }
 
-p {
-    font-family: verdana;
-    font-size: 20px;
-    color: #FCF1E6;
+h3{
+    font-size: 22px;
 }
+
 ul {
     color: #FCF1E6;
     padding-left: 30px;
 }
 figcaption {
     text-align: center;
+    color: #FCF1E6;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border: 1px solid #FCF1E6;
+    border-width:5px; 
+}
+.flex-box{
+    width:700px;
+    height:375px;
+    padding:40px;
+    margin:20px;
+
+}
+.footertext{
+    font-family: verdana;
+    font-size: 20px;
     color: #FCF1E6;
 }
 .employees{
@@ -101,7 +117,6 @@ figcaption {
     align-items: center;
     color: #FCF1E6;
 }
-
 .pictext {
     text-align: center;
     font-size: 15px;
@@ -113,7 +128,12 @@ figcaption {
     margin-right: 150px; 
     word-wrap: break-word;
 }
-
+.sitetext{
+    color: #FCF1E6;
+}
+.siteunorder, li{
+    padding: 3px;
+}
 .image {
     display: block;
     margin-left:auto;
