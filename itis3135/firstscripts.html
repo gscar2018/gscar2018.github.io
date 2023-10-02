@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabriel Scardo's Groovy Spiders || ITIS 3135 || First Scripts</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/defaultscripts.js"></script>
+    </head>
+
+    <body>
+        <div data-include="components/header.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+    <main>
+        <h2>First Scripts</h2>
+
+        <h3 id="datetime">Time</h3>
+        <span id="datetime"></span>
+        <script>
+            const time = new Date();
+            const currentDateTime = time.toLocaleString();
+            console.log(currentDateTime);
+            document.querySelector('#datetime').textContent = currentDateTime;
+        </script>
+        <form id="userinfo">
+            <fieldset>
+                <label for="username">What's your name?</label>
+                <input type="text" id="username" name="username" required></input>
+                <label for="userfeeling">How are you feeling?</label>
+                <input type="text" id="userfeeling" name="userfeeling" required>
+            </fieldset>
+            <div class="buttoncontainer">
+                <button  onclick="userPromt()">submit</button>
+            </div>
+        </form>
+        <form id="usershape">
+            <fieldset>
+                <label for ="shapeidentifier">What's your favorite number from 1 to 10</label>
+                <input type="text" id="userShape" name="userShape" min="1" max="10">
+            </fieldset>
+            <div class="buttoncontainer">
+                <button onclick="polygon()">submit</button>
+            </div>
+        </form>
+
+        <div class="randomfunctions">
+            <button class="spiderButton1" onclick="spiderJoke()">Hear a spider joke</button>
+            <button class="spiderButton2" onclick="spiderInsult()">insult</button>
+            <button class="spiderButton3" onclick="spiderFavouriteNumber()">A spider's favourite number</button>
+            <button class="spiderButton4" onclick="spiderCalc()">Find out how smart spiders are</button>
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</html>

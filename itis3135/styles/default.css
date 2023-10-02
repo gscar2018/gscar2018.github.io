@@ -39,6 +39,16 @@ label{
     color:#FCF1E6;
 }
 
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spiderButton1, .spiderButton2, .spiderButton3, .spiderButton4{
+    margin-right: 15px;
+}
+
 table, th, td{
     border: 1px solid black;
     align-items: center;
@@ -148,4 +158,13 @@ figcaption {
 .reset{
     width: unset;
 }
+
+.randomfunctions, .buttoncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
 
