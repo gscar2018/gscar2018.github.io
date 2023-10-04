@@ -67,6 +67,6 @@ function polygon(){
         var randomNumber1 = Math.floor(Math.random() * 99);
         var randomNumber2 = Math.floor(Math.random() * 99);
         var calc = randomNumber1 + randomNumber2;
-        alert(`Spider are very smart! did you know that they can add \n ${randomNumber1} + ${randomNumber2} = ${calc}`);
+        alert(`Spiders are very smart! did you know that they can add \n ${randomNumber1} + ${randomNumber2} = ${calc}`);
     }
 

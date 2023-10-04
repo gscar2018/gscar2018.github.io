@@ -76,6 +76,11 @@ td{
 
 a{
     color:#98B2D4
+    
+}
+
+a:link{
+    text-decoration: none
 }
 
 h1, h2, h3  {
