@@ -169,6 +169,11 @@ figcaption {
 }
 .reset{
     width: unset;
+    margin: 4px;
+}
+
+.submit{
+    margin: 4px;
 }
 
 .randomfunctions, .buttoncontainer{

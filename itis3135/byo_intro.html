@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabriel Scardo's Groovy Spiders || ITIS 3135 || BYO Intro</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/HTMLInclude.js"></script>
+    </head>
+    <body>
+        <header>
+        <div data-include="components/header.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+        </header>
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO intro page, please full out the 
+                form below so we can create you own page.</h3>
+            <form id="userbioinput">
+                <fieldset>
+                    <label for="fname">Name
+                    <input type="text" id="fname" name="fname">
+                    </label>
+                    <label for="mascot">mascot
+                    <input type="text" id="mascot" name="mascot">
+                    </label>
+                    <label for="image">Image
+                    <input type="file" id="image" name="image">
+                    </label>
+                    <label for="imagecaption">Image Caption
+                    <input type="text" id="imagecaption" name="imagecaption">
+                    </label>
+                    <label for="personalback">Personal Background
+                    <input type="text" id="personalback" name="personalback">
+                    </label>
+                    <label for="professionalback">Professional Background
+                    <input type="text" id="professionalback" name="professionalback">
+                    </label>
+                    <label for="academicback">Academic Background
+                    <input type="text" id="academicback" name="academicback">
+                    </label>
+                    <label for="webdev">Background in Webdevelopment
+                    <input type="text" id="webdev" name="webdev" >
+                    </label>
+                    <label for="complatform">Primary Computer Platform
+                    <input type="text" id="complatform" name="complatform" >
+                    </label>
+                    <div id="newcourse">
+                        <label>Courses:
+                        <input type="text" id="coursesinfo" name="coursesinfo">
+                        </label>
+                    </div>
+                    <br>
+                    <button onclick="newCourse()">add course</button>
+                    <label for="funnything">Funny thing?</label>
+                    <input type="text" id="funnything" name="funnything">
+                    <label for="anythingelse">Anything else?</label>
+                    <input type="text" id="anythingelse" name="anythingelse">
+                    <hr>
+                    <input class="submit" type="submit" value ="submit">
+                </fieldset>
+            </form>
+        <div id="userbio">
+        <input class="reset" type="reset" value ="reset">
+        </div>
+        </main>
+        <script src="scripts/survey.js"></script>
+    </body>
+    <div data-include="components/footer.html"></div>
+</html>
