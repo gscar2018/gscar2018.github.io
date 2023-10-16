@@ -4,6 +4,17 @@
         width: auto;
         margin: 4px;
     }
+
+    img {
+        max-width: auto;
+        width: auto;
+    }
+
+    .bullets{
+        padding: 2em;
+        max-width: 500px;
+        margin-inline: auto;
+    }
 }
 
 
