@@ -207,4 +207,8 @@ figcaption {
     color: #FCF1E6;
 }
 
+.calculator__keys{
+    display: grid;
+}
+
 
