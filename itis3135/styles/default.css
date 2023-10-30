@@ -57,10 +57,11 @@ label{
     color:#FCF1E6;
 }
 
-button{
+button, .button{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .spiderButton1, .spiderButton2, .spiderButton3, .spiderButton4{

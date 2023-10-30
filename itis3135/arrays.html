@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Scardo's Groovy Spiders || ITIS 3135 || Arrays</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/HTMLInclude.js"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </header>
+    <main>
+    <form>
+        <label for="name">Employee Name</label>
+        <input type="text" id="employName" >
+        <label for="salary">Salary</label>
+        <input type="text" id="employSalary">
+       </form>
+       <div class="button"> 
+        <button id = "addButton">Add</button>
+       </div>
+        <h2>Employees</h2>
+        <table id="results_table" class="table-1">
+            <tr>
+                <th>Name</th>
+                <th>Salaries</th>
+            </tr>
+        </table>
+        <div class="button"> 
+        <button id="displaySalaries">Display Salaries
+        </button>
+        </div > 
+        <div id="results">
+        <h2>Averages</h2>
+        <p>Average salary:<p id="averageSalary"></p></p>
+        <p>Max Salary: <p id="maxSalary"></p></p>
+        <div class="button"> 
+        <button id = "displayResults">Display Results</button>
+        </div> 
+        </div>
+    </main>
+</body>
+<script src="scripts/arrays.js"></script>
+<div data-include="components/footer.html"></div>
+<script src="scripts/HTMLInclude.js"></script>
+</html>
