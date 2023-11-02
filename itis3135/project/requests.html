@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests</title>
+    <link rel="stylesheet" href="../styles/project.css">
+</head>
+<div data-include="../components/projecthead.html"></div>
+<script src="../scripts/HTMLInclude.js"></script>
+
+<body>
+
+    <p>
+        Need to add a specific rules for requests 
+    </p>
+    <form id = "requestform" action="">
+    <fieldset>
+        <label for="name">
+            <input id="name" type="text" placeholder="Name">
+        </label>
+        <label for="email">
+            <input id="email" type="text" placeholder="Email">
+        </label>
+    </fieldset>
+    </form>
+    <textarea rows="4" cols="40" name="request" form="requestform">
+        Enter request here</textarea>
+        <div class="button"> 
+            <button id="requestsubmit">Send Request</button>
+        </div>
+</body>
+</html>
