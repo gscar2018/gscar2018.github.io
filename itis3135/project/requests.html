@@ -10,24 +10,27 @@
 <script src="../scripts/HTMLInclude.js"></script>
 
 <body>
-
-    <p>
-        Need to add a specific rules for requests 
-    </p>
+    <div class="requestbox">
+    <h2>Requests</h2>
+    <p>Need to add a specific rules for requests </p>
     <form id = "requestform" action="">
-    <fieldset>
+    <fieldset class="requests">
         <label for="name">
             <input id="name" type="text" placeholder="Name">
         </label>
         <label for="email">
             <input id="email" type="text" placeholder="Email">
         </label>
+        <label for="subject">
+            <input id="subject" type="text" placeholder="subject">
+        </label>
     </fieldset>
-    </form>
     <textarea rows="4" cols="40" name="request" form="requestform">
         Enter request here</textarea>
+</form>
         <div class="button"> 
             <button id="requestsubmit">Send Request</button>
         </div>
+    </div>
 </body>
 </html>
