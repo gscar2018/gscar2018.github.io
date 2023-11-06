@@ -274,6 +274,12 @@ figcaption {
     grid-column: -2;
     grid-row: 2 / span 4;
   }
+ 
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
   
 
 

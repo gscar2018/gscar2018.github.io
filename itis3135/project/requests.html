@@ -8,29 +8,29 @@
 </head>
 <div data-include="../components/projecthead.html"></div>
 <script src="../scripts/HTMLInclude.js"></script>
+<script src="../scripts/project.js"></script>
 
 <body>
     <div class="requestbox">
-    <h2>Requests</h2>
-    <p>Need to add a specific rules for requests </p>
-    <form id = "requestform" action="">
+    <p>Please submit a detailed description of the subject matter, theme, and the medium or style desired.</p>
+    <form id = "requestform" name="requestsForm" onsubmit="return(validate());">
     <fieldset class="requests">
+        <legend>Requests</legend>
         <label for="name">
-            <input id="name" type="text" placeholder="Name">
+            <input id="name" name="Name" type="text" placeholder="Name" >
         </label>
         <label for="email">
-            <input id="email" type="text" placeholder="Email">
+            <input id="email" name="Email" type="text" placeholder="Email" >
         </label>
         <label for="subject">
-            <input id="subject" type="text" placeholder="subject">
+            <input id="subject" name="Subject" type="text" placeholder="Subject" >
         </label>
+        <textarea rows="4" cols="40" name="request" form="requestform" placeholder="Enter Request here" required></textarea>
     </fieldset>
-    <textarea rows="4" cols="40" name="request" form="requestform">
-        Enter request here</textarea>
-</form>
-        <div class="button"> 
-            <button id="requestsubmit">Send Request</button>
-        </div>
+    <div class="button"> 
+        <button type="submit">Send Request</button>
+    </div>
+    </form>
     </div>
 </body>
 </html>
