@@ -1,8 +1,12 @@
+const home = document.getElementById('home');
+const backgroundClick = document.getElementById("background");
+const equipmentClick = document.getElementById("equipment");
 
+
+backgroundClick.addEventListener("click", showPage())
 
 function showPage(){
-    const home = document.getElementById('home');
-    home.classList.add("show");
+    backgroundClick.classList.add("show");
 }
 
 
@@ -14,10 +18,3 @@ function hideSections(){
         sections[i].classList.add("visability");
     }
 }
-// in css make hidden class
-// .visability { display: none;
-// }
-
-// .show {
-// display: auto;
-//}

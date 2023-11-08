@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Site</title>
+    <style>
+        *{font-family: 'lato', sans-serif;}
+        body{background-color: #C1DBE3;}
+        p, h1, h2, h3{color: #373737; display: block}
+        .visability{display: none;}
+        .show{display: block;}
+        nav{display: flex; align-items: center; justify-content: center;}
+        button{padding:10px;margin: 10px}
+        h1,h2, h5{text-align: center;}
+        .image img{width: 100%; height: 700px; object-fit: cover; border-radius: 10px;}
+        .image {display: block; margin-left: auto; margin-right: auto; width: 700px;padding: 25px 15px;}
+        figcaption{ text-align: center;}
+        footer {text-align: center; padding: 25px;}
+        .text{display: block;height: 8em;padding-left: 25%;padding-right: 25%;}
+        .card {background-color: #C7DFC5; padding: 20px; margin-top: 20px; }
+        
+    </style>
+    <script>
+        function hideSections(elementID){
+          let sections = document.getElementsByTagName('section');
+            for(let i = 0; i <sections.length; i++){
+            sections[i].classList.add("visability");
+        }
+        document.getElementById(elementID).classList.remove('visability')
+    }
+    </script>
+</head>
+<header>
+    <h1>My Hobby: Guitars</h1>
+    <nav>
+        <button onclick="hideSections('home')">home</button>
+        <button onclick="hideSections('background')">background</button>
+        <button onclick="hideSections('equipment')">equipment</button>
+        <button onclick="hideSections('why')">why</button>
+    </nav>
+    <br>
+</header>
+<body>
+    <main>
+        <section id="home" >
+            <h2>About me</h2>
+            <div class="card">
+            <p class="text">My name is Gabriel Scardo and one of my favorite hobbies is   
+                playing guitar. It is not my only hobby, I also play piano as well. My interest in playing guitar started in 2016 and has persisted to this day.
+            </p>
+            <figure class="image">
+                <img src="../hobby/images/piano.png" alt="picture of piano">
+                <figcaption>Photo of my piano</figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <p class="text">
+                On this site I will show you some background into why I stared playing guitar.
+                The equipment I use and other fun things. 
+            </p>
+        </div>
+        </section>
+        <section id="background" class="visability">
+            <h2>Why I stared playing guitar</h2>
+            <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube.com/watch?v=M4lsB-B1O7U"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="card">
+            <p class="text">One of the main reasons I started playing guitar was inspiration. I remember listening to one of my favorite artists: Joe Satriani. 
+                I listened to one of his live shows and was blow away by his guitar playing. From That moment on I wanted to play guitar.
+                 All of this was in 2016 and I have been playing guitar ever Since </p>
+                </div>
+                 <figure class="image">
+                    <img src="../hobby/images/Guitar.png" alt="Guitar" >
+                    <figcaption>I dont have a picture of my first guitar but it was a cheap 100$ my sister used to play. 
+                        After A while I was able to save up enough money for the Fender Strat you see in the picture above</figcaption>
+                </figure>
+        </section>
+        <section id="equipment" class="visability">
+            <h2>The equipment I use</h2>
+            <figure class="image">
+                <img src="../hobby/images/Guitar.png" alt="Guitar" >
+                <figcaption>The guitars I use: A Fender Strat I got in 2016. The Strat I replaced the bridge pickup with a Seymour Duncan hot rail pickup. It give the guitar a clearer a louder sound to it. 
+                     A LTD ec-1000 I got in 2022. The LTC has Seymour Duncan passive pickups.</figcaption>
+            </figure>
+            <figure class="image">
+                <img src="../hobby/images/Amp.png" alt="Amp">
+                <figcaption>The pedal and amp I use: I have a preamp reverb, distortion, looper pedal, delay, phaser. 
+                    The Amp is a marshall
+                </figcaption>
+            </figure>
+            <div class="card">
+            <p class="text">In total I have probably spent about 3500$ on all of my guitar equipment. It may seem alot but you have to consider this is over a 7 year period.
+                 Also I play my guitars almost everyday so I get my value out of them </p>
+                </div>
+
+        </section>
+        <section id="why" class="visability">
+            <div class="card">
+            <p class="text">The main reason I play guitar today is it brings me joy.</p>
+            </div>
+            <figure class="image">
+                <img src="../hobby/images/happyman.png" alt="happy man ">
+                <figcaption>Proof it brings me joy 
+                </figcaption>
+            </figure>
+            <div class="card">
+                <p class="text">Though it isnt always joyful; sometimes it can be extremely frustrating to play. What I mean my this is sometimes you reach a point in playing where you dont seem to get any better. 
+                    This stagnation has cause me to not want to play. I had to push through the struggle and keep playing. Once you get over the stagnation it's very rewarding to see myself improve </p>
+                </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <section></section>
+    <p  class="footertext">Page built by <a href="scardoinc.com/">Scardo Inc </a>&copy; 2023 </p>
+    <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html">
+        <img src="../images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML." />
+    </a>        
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        </section>
+</footer>
+
+</html>
