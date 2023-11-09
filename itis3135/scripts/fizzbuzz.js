@@ -7,7 +7,7 @@ let word3 = "BANG!";
 
 function fizzBuzzBang(){
 
-    for(let i = 1; i <= 100; i++){
+    for(let i = 1; i <= 110; i++){
         let text = "";
 
         if(i % 3 === 0 ){
