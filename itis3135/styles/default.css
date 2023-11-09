@@ -178,11 +178,16 @@ figcaption {
 .siteunorder, li{
     padding: 3px;
 }
-.image {
+
+.image img{
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    align-items: center;
 }
 .radio{
     width: unset;
@@ -281,5 +286,3 @@ figcaption {
     margin-top: 20px;
   }
   
-
-
