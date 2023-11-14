@@ -131,6 +131,14 @@ figcaption {
     color: #FCF1E6;
 }
 
+canvas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #FCF1E6;
+    border-width:5px; 
+}
+
 .flex-container{
     display: flex;
     width: 100%;
